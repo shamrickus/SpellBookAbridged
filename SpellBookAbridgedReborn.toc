@@ -1,0 +1,35 @@
+## Interface: 30400
+## Title: Spellbook Abridged Reborn
+## Notes: A Spellbook Filter to reduce clutter from multiple ranks of the same spell.
+## Author: LBXZero, Crusherexe
+## Version: 3.0.0
+## SavedVariablesPerCharacter: SpellBookAbridgedRebornOptions
+
+SpellbookAbridgedReborn.xml
+
+# This Addon implements a means to filter the spells in SpellBookFrame.
+# The only filter so far is a Rank Filter that skips all ranks except
+# for the last rank, which should be the highest rank available.
+#
+# To relocate the Rank Filter Button or Auto UpRank Button, hold CTRL+ Right Click, drag to new location, and then release buttons
+#
+# Slash Commands:
+#	"/sba" resets the Option Buttons' locations (will change if more functions are added)
+#
+# Additional functionality is being developed for making it easier to identify spells that require specific forms.
+#
+# SpellBookFrame Functions modified
+#
+# SpellButton_UpdateButton
+# SpellBook_GetCurrentPage
+# SpellBook_GetSpellBookSlot
+# SpellBookFrame_UpdateSkillLineTabs
+# SpellBook_UpdatePlayerTab
+# SpellBookFrame_OpenToPageForSlot
+# SpellBookFrame_Update
+#
+# SpellButtons have a SecureActionButton set over them to capture clicks for casting
+# SpellButton_OnClick is blocked
+# SpellButton_OnModifiedClick is blocked
+#
+# Using SpellBookFrameTabButton3 for Config Window
